@@ -1,16 +1,10 @@
-
-//S.M. HARIS     ID:211-15-14636
-//PEYA PANDIT    ID:211-15-14633
-//SHAON AN NAFI  ID:211-15-14645
-//MK HAMIM       ID:211-15-14632
-
-#include <stdio.h>    // this is the defult library
-#include <stdlib.h>   // this is the stdlib library
-#include <string.h>   // this is the string library
-#include <windows.h>  // this is the windows api library
+#include <stdio.h>    
+#include <stdlib.h>   
+#include <string.h>   
+#include <windows.h>  
 int rt=1;
 
-//this is the structure it has some members that cant hold data;
+
 struct month{
 	int day;
 	int month;
@@ -20,10 +14,10 @@ struct month{
 	int Total_sold;
 	char SellerName[10];
 };
-//this is the array of the custom type ;
+
 struct month dayzz[370];
 
-//this function calcate the day and month;
+
 int days(int day){
 	int d2 = day%30;
 	return d2;
@@ -52,7 +46,7 @@ void display(int in){
 	}
 }
 
-//haris <<
+
 //this function take input of the day and month
 void FunctionDisplat(){
 	system ("cls");
@@ -92,7 +86,7 @@ void invalid(){
 				}
 		}		
 }
-//pia <<
+
 
 //input function
 void input_data(int moth){
@@ -186,7 +180,6 @@ void input_data(int moth){
 	}
 }
 
-//nafi <<
 
 void inputday_data(){
 	system ("cls");
@@ -239,7 +232,7 @@ void inputday_data(){
 		break;
 	}
 }
-//nafi
+
 void Monthly(){
 	system ("cls");
 	int month_select;
@@ -381,7 +374,7 @@ void Monthly(){
 	}
 	
 }
-//nafi
+
 void Yearly(){
 	int y_profit=0,y_loss=0,y_sold=0,y_items=0;
 		for(int i=0;i<=360;i++){
@@ -464,4 +457,3 @@ int main(){
 	}
 	return 0;
 }
-//hamim <<
